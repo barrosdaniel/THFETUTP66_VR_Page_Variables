@@ -3,67 +3,37 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CSS Variables</title>
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/variables.css" rel="stylesheet">
+  <title>SVGs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/variables.css">
 </head>
 
 <body>
-  <div class="modal">
-    <div class="modal-body">
-      <h2>Modal Window</h2>
-      <p>Virtual Reality is becoming well known as a form of entertainment, but it's also finding its way into fields
-        like architecture, industrial design, healthcare, and so much more!</p>
-      <a class="btn" href="#">Start Your VR Journey</a>
-    </div>
-  </div>
-  <header>
-    <ul class="main-nav">
-      <li><a href="experiences.html">About</a></li>
-      <li><a href="experiences.html">Resources</a></li>
-      <li><a href="experiences.html">Contact</a></li>
-    </ul>
-    <h1>Experience VR</h1>
-    <p>A simple blog about virtual reality experiences</p>
-  </header>
+  <!-- HEART GRAPHIC -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol id="heart" viewBox="0 0 113.8 96.2" stroke="var(--primary-fill)" stroke-width="4">
+      <path fill="var(--secondary-fill)" d="M96 0L67.5 5.2 56.9 23.3v72.8l56.9-55.6z" />
+      <path fill="var(--primary-fill)" d="M46.4 5.3L17.9.1 0 40.6l56.9 55.6.1-72.8z" />
+    </symbol>
+  </svg>
 
-  <div class="intro">
-    <img class="img-featured" src="img/featured.jpg" alt="VR">
-    <p>Virtual Reality is becoming well known as a form of entertainment, but it's also finding its way into fields like
-      architecture, industrial design, healthcare, and so much more!</p>
-    <a style="--btn-bg: firebrick" class="btn" href="https://teamtreehouse.com/vr">Start Your VR Journey</a>
-  </div>
+  <div class="main">
+    <!-- Red -->
+    <svg width="160" height="160" class="heart-red">
+      <use xlink:href="#heart" />
+    </svg>
 
-  <div class="main-content">
-    <div class="card">
-      <i class="material-icons">videocam</i>
-      <h2>Entertainment</h2>
-      <p>Hundreds of VR games and films have been released already. <a href="#">Oculus Story Studio</a> is one example
-        of a company producing VR films.</p>
-      <a class="btn" href="#">Learn more</a>
-    </div>
-    <div class="card">
-      <i class="material-icons">people</i>
-      <h2>Social Networking</h2>
-      <p>VR is finding its way into teleconferencing and social media. At the <a href="#">ethic conference in 2016</a>,
-        Facebook demonstrated what it might look like in VR.</p>
-      <a class="btn" href="#">Learn more</a>
-    </div>
-    <div class="card">
-      <i class="material-icons">school</i>
-      <h2>Education</h2>
-      <p>VR allows students to visit other places and other times. For instance, the BBC produced a <a href="#">360°
-          video</a> that allows users to see the scale of dinosaurs in stereoscopic 3D.</p>
-      <a class="btn" href="#">Learn more</a>
-    </div>
+    <!-- Green -->
+    <svg width="140" height="140" class="heart-green">
+      <use xlink:href="#heart" />
+    </svg>
+
+    <!-- Blue -->
+    <svg width="120" height="120" class="heart-blue">
+      <use xlink:href="#heart" />
+    </svg>
   </div>
 
-  <footer>
-    <span>&copy;2017 Experience VR, The Site</span>
-  </footer>
 </body>
 
 </html>
